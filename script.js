@@ -98,16 +98,16 @@ let allQuestions = [
   text: "Players who receive a red card _____ leave the field immediately.",
   options: [
     {
-      text: "can't",
+      text: "going to",
       score: 0,
       type: "Wrong",
-      explanation: "CAN'T significa que algo não é permitido ou não é possível. Aqui a frase precisa expressar uma obrigação."
+      explanation: "'Going to' é usado para planos ou previsões com evidência. Aqui a frase precisa expressar uma obrigação."
     },
     {
-      text: "shouldn't",
+      text: "will",
       score: 0,
       type: "Wrong",
-      explanation: "SHOULDN'T é usado para dar conselho. Receber um cartão vermelho não é um conselho, é uma regra."
+      explanation: "WILL fala de previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Receber um cartão vermelho é é uma regra."
     },
     {
       text: "must",
@@ -116,16 +116,76 @@ let allQuestions = [
       explanation: "Exactly! MUST é usado para regras e obrigações. Jogadores com cartão vermelho devem sair do campo."
     },
     {
-      text: "may not",
+      text: "may",
       score: 0,
       type: "Wrong",
-      explanation: "MAY NOT indica proibição ou possibilidade negativa. Aqui precisamos expressar obrigação."
+      explanation: "Usamos MAY para dar ou pedir permissão ou para falar sobre algo que talvez aconteça. Aqui precisamos expressar obrigação."
     }
   ]
 },
 
 {
-  text: "Fans _____ bring fireworks into a World Cup stadium.",
+  text: "Excuse me, officer. I have this professional camera with me. __________ I bring it inside the stadium?",
+  options: [
+    {
+      text: "will",
+      score: 0,
+      type: "Wrong",
+      explanation: "WILL fala de previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Aqui a frase pede permissão."
+    },
+    {
+      text: "should",
+      score: 0,
+      type: "Wrong",
+      explanation: "SHOULD é usado para dar ou pedir conselho. Aqui a frase pede permissão."
+    },
+    {
+      text: "must",
+      score: 0,
+      type: "Wrong",
+      explanation: "MUST é usado para obrigações. Aqui a frase pede permissão."
+    },
+    {
+      text: "may",
+      score: 1,
+      type: "Correct",
+      explanation: "Exactly! MAY pode ser usado para pedir permissão. Também poderíamos usar CAN."
+    }
+  ]
+},
+
+  {
+  text: "They are not the favorites,but they ________ win this match. It's a very low probability, but not impossible.",
+  options: [
+    {
+      text: "must",
+      score: 0,
+      type: "Wrong",
+      explanation: "MUST significa que algo é obrigatório. A frase está falando em uma possibilidade remota, então usamos MIGHT."
+    },
+    {
+      text: "should",
+      score: 0,
+      type: "Wrong",
+      explanation: "SHOULD é usado para dar conselho ou recomendação. A frase está falando em uma possibilidade remota, então é MIGHT."
+    },
+    {
+      text: "are going to",
+      score: 0,
+      type: "Wrong",
+      explanation: "GOING TO indicaria um plano ou uma previsão com evidência. A frase está falando em uma possibilidade remota. O correto é MIGHT."
+    },
+    {
+      text: "might",
+      score: 1,
+      type: "Correct",
+      explanation: "Exactly! MIGHT deve ser usado para possibilidades remotas."
+    }
+  ]
+},
+  
+{
+  text: "Fans _____ bring fireworks into a World Cup stadium. Fireworks are not allowed.",
   options: [
     {
       text: "can",
@@ -140,16 +200,106 @@ let allQuestions = [
       explanation: "SHOULD é usado para conselhos. A frase fala sobre uma proibição."
     },
     {
-      text: "may",
+      text: "are going to",
       score: 0,
       type: "Wrong",
-      explanation: "MAY pode indicar permissão. Neste caso os torcedores não têm essa permissão."
+      explanation: "GOING TO fala de previsões e planos.A frase fala sobre uma proibição."
     },
     {
       text: "mustn't",
       score: 1,
       type: "Correct",
       explanation: "Exactly! MUSTN'T é usado para proibições. Não é permitido levar fogos de artifício ao estádio."
+    }
+  ]
+},
+
+  {
+  text: "It's scorching hot here at the stadium! I think you ______ drink plenty of water to avoid dehydration. It's really important for your health.",
+  options: [
+    {
+      text: "can",
+      score: 0,
+      type: "Wrong",
+      explanation: "CAN indica permissão, habilidade ou possibilidade. Aqui estamos dando um conselho. A resposta é SHOULD."
+    },
+    {
+      text: "should",
+      score: 1,
+      type: "Correct",
+      explanation: "Exactly! SHOULD é usado para conselhos."
+    },
+    {
+      text: "may",
+      score: 0,
+      type: "Wrong",
+      explanation: "MAY pode indicar permissão ou possibilidade. Aqui estamos dando um conselho. A resposta é SHOULD."
+    },
+    {
+      text: "might",
+      score: 0,
+      type: "Wrong",
+      explanation: "MIGHT pode indicar uma possibilidade pequena. Aqui estamos dando um conselho. A resposta é SHOULD."
+    }
+  ]
+},
+
+  {
+  text: "Football is unpredictable, so Paraguay ______ defeat France in the quarter-finals of the World Cup.",
+  options: [
+    {
+      text: "must",
+      score: 0,
+      type: "Wrong",
+      explanation: "Aqui estamos falando sobre a possibilidade não tão remota de uma coisa acontecer. MUST é usado para falar de obrigações. Usamos MAY."
+    },
+    {
+      text: "may",
+      score: 1,
+      type: "Correct",
+      explanation: "Exactly! Aqui estamos falando sobre a possibilidade não tão remota de uma coisa acontecer. Usamos MAY."
+    },
+    {
+      text: "should",
+      score: 0,
+      type: "Wrong",
+      explanation: "SHOULD é usado para falar de conselhos. Aqui estamos falando sobre a possibilidade não tão remota de uma coisa acontecer. Usamos MAY."
+    },
+    {
+      text: "will",
+      score: 0,
+      type: "Wrong",
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. A frase está falando sobre a possibilidade não tão remota de uma coisa acontecer. Usamos MAY."
+    }
+  ]
+},
+
+  {
+  text: "After a tough loss, the coach advised the players: 'You ______ analyze your performance and learn from your mistakes.'",
+  options: [
+    {
+      text: "can",
+      score: 0,
+      type: "Wrong",
+      explanation: "CAN indica permissão, habilidade ou possibilidade. Aqui estamos dando um conselho. A resposta é SHOULD."
+    },
+    {
+      text: "should",
+      score: 1,
+      type: "Correct",
+      explanation: "Exactly! SHOULD é usado para conselhos."
+    },
+    {
+      text: "will",
+      score: 0,
+      type: "Wrong",
+      explanation: "MAY pode indicar permissão ou possibilidade. Aqui estamos dando um conselho. A resposta é SHOULD."
+    },
+    {
+      text: "might",
+      score: 0,
+      type: "Wrong",
+      explanation: "MIGHT pode indicar uma possibilidade pequena. Aqui estamos dando um conselho. A resposta é SHOULD."
     }
   ]
 },
@@ -164,10 +314,10 @@ let allQuestions = [
       explanation: "Exactly! CAN expressa permissão. Goleiros podem usar as mãos dentro da área."
     },
     {
-      text: "can't",
+      text: "will",
       score: 0,
       type: "Wrong",
-      explanation: "CAN'T significaria que os goleiros não podem usar as mãos, o que não é verdade."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. A frase fala sobre uma permissão."
     },
     {
       text: "should",
@@ -191,7 +341,7 @@ let allQuestions = [
       text: "can",
       score: 0,
       type: "Wrong",
-      explanation: "CAN expressa possibilidade ou habilidade. A frase está dando um conselho."
+      explanation: "CAN expressa possibilidade, permissão ou habilidade. A frase está dando um conselho."
     },
     {
       text: "shouldn't",
@@ -200,13 +350,13 @@ let allQuestions = [
       explanation: "Exactly! SHOULDN'T é usado para aconselhar contra algo. Continuar jogando machucado é perigoso."
     },
     {
-      text: "may",
+      text: "won't",
       score: 0,
       type: "Wrong",
-      explanation: "MAY indica possibilidade ou permissão. Aqui estamos dando uma recomendação."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Aqui estamos falando de necessidade ou obrigação."
     },
     {
-      text: "have to",
+      text: "has to",
       score: 0,
       type: "Wrong",
       explanation: "HAVE TO indica obrigação. Um jogador machucado não é obrigado a continuar jogando."
@@ -230,16 +380,16 @@ let allQuestions = [
       explanation: "CAN'T indica possibilidade ou permissão. A frase fala de uma obrigação."
     },
     {
-      text: "may",
+      text: "going to",
       score: 0,
       type: "Wrong",
-      explanation: "MAY indica permissão ou possibilidade. Se eles não chegarem a tempo, não podem jogar. Então eles são obrigados a chegar cedo."
+      explanation: "GOING TO é usado para previsões com evidência ou para planos. Aqui estamos falando de necessidade ou obrigação."
     },
     {
-      text: "should",
+      text: "will",
       score: 0,
       type: "Wrong",
-      explanation: "SHOULD é apenas um conselho. Se eles não chegarem a tempo, não podem jogar. Então eles são obrigados a chegar cedo."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Aqui estamos falando de necessidade ou obrigação."
     }
   ]
 },
@@ -254,10 +404,10 @@ let allQuestions = [
       explanation: "CAN'T indica proibição. A frase fala de uma exigência para entrar."
     },
     {
-      text: "should",
+      text: "will",
       score: 0,
       type: "Wrong",
-      explanation: "SHOULD é um conselho. Comprar o ingresso é obrigatório."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Comprar o ingresso é obrigatório para entrar."
     },
     {
       text: "have to",
@@ -266,10 +416,10 @@ let allQuestions = [
       explanation: "Exactly! HAVE TO expressa uma obrigação para entrar no estádio."
     },
     {
-      text: "may",
+      text: "are going to",
       score: 0,
       type: "Wrong",
-      explanation: "MAY indica permissão ou possibilidade. Aqui é uma exigência."
+      explanation: "GOING TO é usado para previsões com evidência ou para planos. Aqui é uma exigência."
     }
   ]
 },
@@ -326,10 +476,10 @@ let allQuestions = [
       explanation: "SHOULDN'T significaria que ele não deveria parar o jogo."
     },
     {
-      text: "don't have to",
+      text: "won't",
       score: 0,
       type: "Wrong",
-      explanation: "DON'T HAVE TO indica ausência de obrigação, mas a frase fala sobre uma opção permitida."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Estamos falando de uma coisa que é permitida ou possível."
     }
   ]
 },
@@ -371,13 +521,13 @@ let allQuestions = [
       text: "can't",
       score: 0,
       type: "Wrong",
-      explanation: "CAN'T indicaria proibição. A frase fala sobre uma obrigação."
+      explanation: "CAN'T indicaria proibição ou impedimento. A frase fala sobre uma obrigação."
     },
     {
-      text: "may",
+      text: "will",
       score: 0,
       type: "Wrong",
-      explanation: "MAY indica permissão. Respeitar o árbitro não é opcional."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Estamos falando de uma obrigação"
     },
     {
       text: "must",
@@ -398,10 +548,10 @@ let allQuestions = [
   text: "A coach _____ enter the field during the game without permission.",
   options: [
     {
-      text: "can",
+      text: "will not",
       score: 0,
       type: "Wrong",
-      explanation: "CAN indica permissão. O técnico não tem essa permissão."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Estamos falando de permissão."
     },
     {
       text: "can't",
@@ -410,16 +560,16 @@ let allQuestions = [
       explanation: "Exactly! CAN'T indica que algo não é permitido."
     },
     {
-      text: "should",
+      text: "isn't going to",
       score: 0,
       type: "Wrong",
-      explanation: "SHOULD é usado para conselhos. A frase fala sobre uma regra."
+      explanation: "GOING TO é usado para previsões com evidência ou para planos. A frase fala sobre uma regra."
     },
     {
       text: "have to",
       score: 0,
       type: "Wrong",
-      explanation: "HAVE TO indica obrigação. O técnico não é obrigado a entrar em campo. Muito pelo contrário."
+      explanation: "HAVE TO indica obrigação. O técnico não é obrigado a entrar em campo."
     }
   ]
 },
@@ -458,10 +608,10 @@ let allQuestions = [
   text: "Players _____ argue aggressively with the referee. It is against the rules.",
   options: [
     {
-      text: "should",
+      text: "aren't going to",
       score: 0,
       type: "Wrong",
-      explanation: "SHOULD é usado para conselhos. A frase fala sobre uma proibição."
+      explanation: "GOING TO é usado para previsões com evidência ou para planos. A frase fala sobre uma proibição."
     },
     {
       text: "can",
@@ -470,10 +620,10 @@ let allQuestions = [
       explanation: "CAN indica permissão. Os jogadores não têm essa permissão."
     },
     {
-      text: "may",
+      text: "won't",
       score: 0,
       type: "Wrong",
-      explanation: "MAY indica possibilidade ou permissão. A ação é proibida."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Estamos falando de uma proibição."
     },
     {
       text: "mustn't",
@@ -485,7 +635,7 @@ let allQuestions = [
 },
 
 {
-  text: "Players _____ wear shin guards during a match.",
+  text: "Players _____ wear shin guards during a match. It is mandatory.",
   options: [
     {
       text: "must",
@@ -494,10 +644,10 @@ let allQuestions = [
       explanation: "Exactly! MUST é usado para regras e obrigações."
     },
     {
-      text: "don't have to",
+      text: "will",
       score: 0,
       type: "Wrong",
-      explanation: "DON'T HAVE TO significaria que não é necessário usar caneleiras."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Estamos falando de uma regra."
     },
     {
       text: "may",
@@ -506,10 +656,10 @@ let allQuestions = [
       explanation: "MAY indica permissão. O uso de caneleiras é obrigatório."
     },
     {
-      text: "shouldn't",
+      text: "going to",
       score: 0,
       type: "Wrong",
-      explanation: "SHOULDN'T significaria que não deveriam usar caneleiras."
+      explanation: "GOING TO é usado para previsões com evidência ou planos. Estamos falando de uma obrigação."
     }
   ]
 },
@@ -518,10 +668,10 @@ let allQuestions = [
   text: "A substitute player _____ enter the field before the referee gives permission.",
   options: [
     {
-      text: "can",
+      text: "will not",
       score: 0,
       type: "Wrong",
-      explanation: "CAN indica permissão. O jogador não tem essa permissão."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. Aqui estamos falando de não ter permissão."
     },
     {
       text: "should",
@@ -551,25 +701,25 @@ let allQuestions = [
       text: "can",
       score: 0,
       type: "Wrong",
-      explanation: "CAN indica permissão. Os visitantes não têm essa permissão."
+      explanation: "CAN indica permissão, possibilidade ou habilidade. A frase fala sobre uma probibição."
     },
     {
       text: "should",
       score: 0,
       type: "Wrong",
-      explanation: "SHOULD é usado para conselhos. A frase fala sobre permissão."
+      explanation: "SHOULD é usado para conselhos. AA frase fala sobre uma probibição."
     },
     {
-      text: "have to",
+      text: "won't",
       score: 0,
       type: "Wrong",
-      explanation: "HAVE TO indica obrigação. Os visitantes não são obrigados a entrar."
+      explanation: "WILL é usado para previsões sem evidência, opiniões, promessas, ofertas e decisões feitas no momento. A frase fala sobre uma probibição."
     },
     {
-      text: "may not",
+      text: "mustn't",
       score: 1,
       type: "Correct",
-      explanation: "Exactly! MAY NOT indica que algo não é permitido."
+      explanation: "Exactly! MUSTN'T indica que algo é proibido."
     }
   ]
 },
